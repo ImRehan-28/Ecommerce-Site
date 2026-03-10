@@ -21,3 +21,15 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Specific file types
+*.js text
+*.json text
+*.css text
+*.html text
+
+# Add this line for .gitignore
+.gitignore text
