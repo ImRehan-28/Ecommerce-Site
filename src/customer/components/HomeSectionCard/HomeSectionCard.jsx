@@ -1,9 +1,13 @@
 import React from "react";
 
 const HomeSectionCard = ({product}) => {
+  if (!product) {
+    return null;
+  }
+  
   return (
     <div className="cursor-pointer flex flex-col items-center bg-white rounded-lg shadow-lg overflow-hidden w-[15rem] mx-3">
-      <div className="h-[13rem] w-[12rem] mx-3">
+      <div className="h-[13rem] w-[12rem] mx-auto">
         <img className="object-cover object-top w-full h-full" src={product.imageUrl} alt="" />
       </div>
 
